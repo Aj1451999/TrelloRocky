@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallelexecution]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Segment1(failed)">
+    <classes>
+      <class name="com.trello.qspiders.learntestng.UsageOfBeforeAndAfterMethod">
+        <methods>
+          <include name="testcase"/>
+          <include name="configAfterMethod"/>
+          <include name="configBeforeMethod"/>
+        </methods>
+      </class> <!-- com.trello.qspiders.learntestng.UsageOfBeforeAndAfterMethod -->
+    </classes>
+  </test> <!-- Segment1(failed) -->
+</suite> <!-- Failed suite [Parallelexecution] -->

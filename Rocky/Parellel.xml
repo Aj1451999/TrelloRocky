@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallelexecution" parallel="tests" thread-count="5" >
+  <test name="Segment1">
+  <classes><class name ="com.trello.qspiders.learntestng.DisableTestCaseFromExecution"></class>
+  <class name ="com.trello.qspiders.learntestng.UsageOfBeforeAndAfterMethod"></class></classes>
+  </test> <!-- Test -->
+  <test name="Segment2">
+  <classes><class name ="com.trello.qspiders.learntestng.UserDefinedOrder"></class>
+  <class name ="com.trello.qspiders.learntestng.WhatIfMultipleTestAnnotationsINTheClass"></class></classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
